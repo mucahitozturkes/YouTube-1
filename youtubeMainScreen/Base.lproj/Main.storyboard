@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="youtubeMainScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-bK-Ysm">
+                                <rect key="frame" x="30" y="20" width="315" height="522"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kbc-Gx-Ya9">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="32"/>
+                                        <segments>
+                                            <segment title="TR"/>
+                                            <segment title="EN"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playstation.logo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TIp-Md-cj9">
+                                        <rect key="frame" x="0.0" y="61.5" width="315" height="148.5"/>
+                                        <color key="tintColor" systemColor="systemCyanColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="jlA-bo-c7e"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQt-Pg-FpC">
+                                        <rect key="frame" x="0.0" y="241" width="315" height="281"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="foD-2I-FDo">
+                                                <rect key="frame" x="30" y="30" width="255" height="221"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yc7-ji-1vf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="255" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="uae-UH-NqE">
+                                                        <rect key="frame" x="0.0" y="64" width="255" height="63.5"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yio-fM-zNb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="255" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qll-wj-Dfv">
+                                                                <rect key="frame" x="0.0" y="37" width="255" height="26.5"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Forgot password?">
+                                                                            <attributes>
+                                                                                <font key="NSFont" metaFont="cellTitle"/>
+                                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="gHV-vY-0e1">
+                                                        <rect key="frame" x="0.0" y="157.5" width="255" height="63.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooA-fm-sz2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="255" height="34.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Sign In">
+                                                                    <color key="baseBackgroundColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="0.63907284768211925" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-T9-Qk3">
+                                                                <rect key="frame" x="0.0" y="37.5" width="255" height="26"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Create new account">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94663431186868685" green="0.94663431186868685" blue="0.94663431186868685" alpha="0.53300910596026485" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="foD-2I-FDo" firstAttribute="leading" secondItem="SQt-Pg-FpC" secondAttribute="leading" constant="30" id="AEo-M7-Koi"/>
+                                            <constraint firstItem="foD-2I-FDo" firstAttribute="top" secondItem="SQt-Pg-FpC" secondAttribute="top" constant="30" id="L0N-Bm-4W1"/>
+                                            <constraint firstAttribute="trailing" secondItem="foD-2I-FDo" secondAttribute="trailing" constant="30" id="RMd-Cc-cOk"/>
+                                            <constraint firstAttribute="bottom" secondItem="foD-2I-FDo" secondAttribute="bottom" constant="30" id="THg-3z-U3q"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5q8-tx-nAj">
+                                <rect key="frame" x="80" y="583" width="215" height="79"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWM-20-Mzv">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="apple.logo" catalog="system" title="Sign in with Apple" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.77254903320000001" green="0.77254903320000001" blue="0.77254903320000001" alpha="0.1468853477" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="strokeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31m-Gi-QVV">
+                                        <rect key="frame" x="0.0" y="44.5" width="215" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="globe.europe.africa" catalog="system" title="Sign In with Google" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.77254903320000001" green="0.77254903320000001" blue="0.77254903320000001" alpha="0.1468853477" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aBg-bK-Ysm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3SX-cB-FGk"/>
+                            <constraint firstItem="5q8-tx-nAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Rbp-ym-qec"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5q8-tx-nAj" secondAttribute="bottom" constant="5" id="SrW-Aa-zYm"/>
+                            <constraint firstItem="aBg-bK-Ysm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="X3W-Eu-PSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5q8-tx-nAj" secondAttribute="trailing" constant="80" id="ajJ-zf-33e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aBg-bK-Ysm" secondAttribute="trailing" constant="30" id="m45-Du-YRn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple.logo" catalog="system" width="105" height="128"/>
+        <image name="globe.europe.africa" catalog="system" width="128" height="123"/>
+        <image name="playstation.logo" catalog="system" width="128" height="92"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
